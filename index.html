@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>개포중 1학년부 업무 인수인계</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React 18 UMD -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel (브라우저에서 JSX 변환용) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+
+    <!-- 여기 스크립트에 캔버스 코드(컴포넌트) 붙여넣기 -->
+    <script type="text/babel">
+      // ⬇️ 캔버스 문서 맨 위의 import 줄은 제거하세요:
+      // import React, { useEffect, useMemo, useRef, useState } from "react";
+      // 대신 전역 React를 그대로 씁니다.
+      const { useEffect, useMemo, useRef, useState } = React;
+
+      // ⬇️ export default function ... -> function ... 으로만 바꾸면 됩니다.
+      // (파일 맨 마지막에 ReactDOM.render를 직접 호출할 거라 export가 필요 없어요)
+      // ---- 여기부터 캔버스의 HandoverPage 컴포넌트 전체를 그대로 붙여넣기 ----
+
+      /* PASTE: HandoverPage() 전체 및 아래쪽 보조 컴포넌트/데이터(roles, monthlyTasks, ... Toast까지)
+         - import/export 문은 모두 제거
+         - 나머지 JSX/로직은 그대로 둬도 됩니다.
+      */
+
+      // ---- 여기까지 붙여넣기 ----
+
+      // 루트에 렌더링
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<HandoverPage />);
+    </script>
+  </body>
+</html>
